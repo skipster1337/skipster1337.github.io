@@ -1,0 +1,239 @@
+/* main site body
+------------------------------------------------------------
+*/
+
+html,
+body {
+  height: 100%;
+  /* extends the divs down to the bottom of the page */
+  margin: 0;
+}
+
+/* font faces
+------------------------------------------------------------
+*/
+
+@font-face {
+  font-family: roboto;
+  src: url(fonts/roboto.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(fonts/roboto-b.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(fonts/roboto-i.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(fonts/roboto-z.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Consolas;
+  src: url(fonts/consolas.ttf);
+}
+
+@font-face {
+  font-family: Consolas;
+  src: url(fonts/consolas-b.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Consolas;
+  src: url(fonts/consolas-i.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Consolas;
+  src: url(fonts/consolas-z.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* sidebar
+------------------------------------------------------------
+*/
+
+.sidebar {
+  background-color: #1c1c1c;
+  color: white;
+  transform: scale(1);
+  /* used for shadow */
+  height: 100%;
+  /* goes down to the bottom */
+  width: 15%;
+  /* good thing to note, it does not take the width of the
+    entire viewport but rather the width of its parent div, pretty cool */
+  float: left;
+  /* stick the sidebar to the left */
+  box-shadow: 0px 0px 8px 5px #000;
+  font-family: roboto;
+}
+
+.sidebar hr {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* scale the separator */
+}
+
+.sidebartext-bold {
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 0px;
+  /* bold text, category titles */
+}
+
+.sidebartext {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  margin: 0px;
+  font-size: 13px;
+  /* normal sidebar text */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* main area
+------------------------------------------------------------
+*/
+
+.main {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 85%;
+  float: left;
+}
+
+.bannerimage {
+  background-image: url(../sunset.jpg);
+  background-position: 100% 65%;
+  background-size: cover;
+  width: 100%;
+  height: 40%;
+  /* will not work properly in ie below 10, warning appended */
+}
+
+.maincontainer {
+  padding-left: 80px;
+  padding-right: 80px;
+  height: 100%;
+  overflow: auto;
+}
+
+.maintext {
+  font-family: roboto;
+  font-size: 14px;
+}
+
+.maintext-bold {
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.maintext-italic {
+  font-family: roboto;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.maintext-title {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main a {
+  text-decoration: none;
+  color: darkred;
+}
+
+.main a:hover {
+  text-decoration: underline;
+}
+
+.link-italic {
+  text-decoration: none;
+  color: darkred;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid dimgray;
+}
+
+.codeblock {
+  background-color: lightgray;
+  overflow: auto;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.codeblock pre {
+  margin: 0px;
+  font-family: Consolas;
+  font-size: 13px;
+  /* get rid of empty lines on start and finish */
+}
+
+/* Tables
+------------------------------------------------------------
+*/
+table {
+  font-family: roboto;
+  font-size: 13px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid gray;
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+/* IE unsupported warning
+------------------------------------------------------------
+*/
+
+.ienotice {
+  background-color: red;
+  color: white;
+  font-family: Tahoma;
+  /* warning for old IE browsers, does not work on IE11
+    but so far no rendering errors on 11 encountered */
+}
+
+.ienotice p {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}

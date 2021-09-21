@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <title>Using Windows XP in modern times - skipster1337's Site</title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <p class="sidebartext-bold">Pages</p>
+      <p class="sidebartext"><a href="../index.html">Home</a></p>
+      <p class="sidebartext"><a href="../about.html">About</a></p>
+      <hr />
+      <p class="sidebartext-bold">Posts</p>
+      <p class="sidebartext">
+        <a href="xp-info.html">Using Windows XP in modern times</a>
+      </p>
+      <p class="sidebartext">
+        <a href="windows-software.html"
+          >Getting Updates and software for old Windows</a
+        >
+      </p>
+    </div>
+    <div class="main">
+      <!--[if IE]>
+        <div class="ienotice">
+          <p>
+            Whoops! It seems you are actually browsing this site on Internet
+            Explorer... It is recommended that you upgrade to a newer browser as
+            you will lose a lot of compatibility with this website if you keep
+            using IE.
+          </p>
+        </div>
+      <![endif]-->
+      <div class="maincontainer">
+        <p class="maintext-title">
+          Using Windows XP in modern times - A comprehensive guide to keeping XP
+          secure and up-to-date.
+        </p>
+        <p class="maintext">
+          Sometimes, I hear people saying Windows XP is plain unusable in 2021.
+          That is not true. You can still use Windows XP with great success,
+          even 20 years later. In this post I'm going to get into the details of
+          using Windows XP in modern times while ensuring maximum possible
+          security and compatibility.
+        </p>
+        <p class="maintext-bold">Preparing the installation media</p>
+        <p class="maintext">
+          First of all you have to get an ISO file. If you don't already have
+          one, the best way to do it is to pop in the original XP CD if you have
+          it, but if you don't, just grab one of the many ISO images on
+          <a href="https://archive.org">archive.org</a> and find a key online.
+          Can't really get into the details for obvious reasons.
+        </p>
+        <p class="maintext">
+          Next, you have to make a USB-based installation medium which will be
+          much faster and comfortable to use than a CD. for that we are going to
+          use WinSetupFromUSB. I prefer this app over Rufus because sometimes
+          I've had Rufus just refuse to work on certain machines (while working
+          well on others). On the other hand, WinSetupFromUSB works well in
+          almost every case.
+        </p>
+        <div class="codeblock">
+          <code>
+            <pre>
+1. Run the program, select the needed USB drive.
+2. Click on "Bootice" to format the USB drive.
+3. Click on "Parts Manage".
+4. Click "Format This Part".
+5. File system: NTFS, Volume label: any (must not use spaces), do not change anything beyond that. Click on "start".
+6. Once it's done, close Bootice.
+7. Now, get to your CD, or ISO file, and mount it using a third party tool or open it using Windows Explorer if it works.
+8. Check "Windows 2000/XP/2003 Setup" and click on the "..." button.
+9. Lead it to your virtual drive, then click "Select Folder".
+10. Accept the license agreement if it asks you to, then click "GO".</pre
+            >
+          </code>
+        </div>
+        <p class="maintext">
+          Once it's done flashing, set it as the primary boot device in the PC's
+          BIOS (on some BIOS'es you have to set a "HDD" as primary, and then set
+          which "HDD" in the secondary menu), and restart the PC. It should boot
+          from your new USB drive. Select the first part of the setup, and then
+          the second part of the setup.
+        </p>
+        <p class="maintext">
+          You should note that if your PC uses a SATA drive, you will need SATA
+          drivers integrated into your installation media to proceed with
+          installing. However a common workaround is enabling IDE legacy mode in
+          the BIOS settings, which will make IDE-only programs work with SATA
+          drives. You can later install a SATA controller driver from the
+          installed system.
+        </p>
+        <p class="maintext-bold">Getting drivers</p>
+        <p class="maintext">
+          When it's done installing, you should be greeted by the desktop. At
+          this point you need to install the drivers, and it can be a real issue
+          sometimes. There are several ways to install drivers: finding the
+          original driver CD for your motherboard, using DPinst to install
+          drivers that come in .cab format from the
+          <a class="link" href="https://www.catalog.update.microsoft.com"
+            >Microsoft Update Catalog</a
+          >, searching for drivers on the internet (hint: try
+          <a href="http://driverpacks.net/driverpacks">DriverPacks</a>) or using
+          a driver app like Snappy Driver Installer (you could also use SDI
+          Origin, both are great apps but will take a while to download all of
+          the needed drivers.). It's probably a good idea to drop the full
+          version on a USB drive, but mine is only 8 GB so I ended up using the
+          original driver CD and installing driver updates using DPinst.
+        </p>
+        <p class="maintext-bold">Getting Updates and Software</p>
+        <p class="maintext">
+          Take a look at
+          <a class="link-italic" href="windows-software.html"
+            >Getting updates and software for old Windows</a
+          >, it's a pretty big list so I found it better to split it into a
+          separate post.
+          <br />
+          However, I find it useful to remind you about
+          <a href="https://archive.org">archive.org</a>. If you are in need of
+          pretty much any file or software, chances are it's archived there. If
+          not, try searching up the download link to your file in the Wayback
+          Machine and see if it's there instead.
+        </p>
+        <p class="maintext-bold">Wrapping up</p>
+        <p class="maintext">
+          Overall a pretty simple guide really, if you also make sure to read
+          the post above you should get a fully working XP machine that is as
+          modern as it gets. Hope you enjoyed this guide, and make sure to
+          bookmark it if you can, because it will get updated as time goes.
+        </p>
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>
