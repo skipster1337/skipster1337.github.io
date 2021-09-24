@@ -4,9 +4,11 @@
 
 html,
 body {
-  height: 100%;
+  background-color: whitesmoke;
+  /* height: 100%; */
   /* extends the divs down to the bottom of the page */
   margin: 0;
+  scrollbar-width: thin;
 }
 
 /* font faces
@@ -66,19 +68,39 @@ body {
 */
 
 .sidebar {
-  background-color: #1c1c1c;
+  background-color: #212329;
   color: white;
-  transform: scale(1);
-  /* used for shadow */
-  height: 100%;
-  /* goes down to the bottom */
-  width: 15%;
-  /* good thing to note, it does not take the width of the
-    entire viewport but rather the width of its parent div, pretty cool */
-  float: left;
-  /* stick the sidebar to the left */
   box-shadow: 0px 0px 8px 5px #000;
+  overflow: auto;
+  color-scheme: dark;
   font-family: roboto;
+  position: fixed;
+  /* Radu: fixes the sidebar to the left of the browser window
+    independent from scrolling */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  scrollbar-width: thin;
+  /* set the width for the sidebar here */
+}
+
+.sidebarlogo {
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepages {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.homepages a {
+  padding: 4px;
 }
 
 .sidebar hr {
@@ -120,25 +142,34 @@ body {
 */
 
 .main {
-  background-color: whitesmoke;
-  height: 100%;
-  width: 85%;
-  float: left;
+  margin-left: 200px;
 }
 
 .bannerimage {
-  background-image: url(../sunset.jpg);
-  background-position: 100% 65%;
+  background-image: linear-gradient(to bottom, transparent 50%, whitesmoke 100%),
+    url(../server.png);
+  background-position: center;
   background-size: cover;
-  height: 40%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
   /* will not work properly in ie below 10, warning appended */
+}
+
+.homepage-title {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 40px;
+  align-self: flex-end;
 }
 
 .maincontainer {
   padding-left: 80px;
   padding-right: 80px;
   height: 100%;
-  overflow: auto;
+  /* overflow: auto; */
+  /* Radu: now the content can have any height 
+    and the main page will scroll just fine */
 }
 
 .maintext {
@@ -167,7 +198,7 @@ body {
 
 .main a {
   text-decoration: none;
-  color: darkred;
+  color: darkslategrey;
 }
 
 .main a:hover {
@@ -176,7 +207,7 @@ body {
 
 .link-italic {
   text-decoration: none;
-  color: darkred;
+  color: darkslategrey;
   font-style: italic;
 }
 
@@ -190,6 +221,7 @@ hr {
   overflow: auto;
   border-radius: 4px;
   padding: 10px;
+  scrollbar-width: thin;
 }
 
 .codeblock pre {
@@ -202,7 +234,7 @@ hr {
 .thumbnail {
   max-height: 300px;
   border-radius: 4px;
-  border: 3px solid lightgray
+  border: 3px solid lightgray;
 }
 
 /* Tables
@@ -215,7 +247,8 @@ table {
   width: 100%;
 }
 
-td, th {
+td,
+th {
   border: 1px solid gray;
   text-align: left;
   padding: 4px;
@@ -225,20 +258,16 @@ tr:nth-child(even) {
   background-color: lightgray;
 }
 
-/* IE unsupported warning
+/* scrollbars
 ------------------------------------------------------------
 */
-
-.ienotice {
-  background-color: red;
-  color: white;
-  font-family: Tahoma;
-  /* warning for old IE browsers, does not work on IE11
-    but so far no rendering errors on 11 encountered */
+::-webkit-scrollbar {
+  width: 8px;
 }
-
-.ienotice p {
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border: transparent;
 }
