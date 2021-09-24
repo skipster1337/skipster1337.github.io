@@ -94,7 +94,7 @@ body {
 
 .homepages {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Roboto;
   font-size: 16px;
   margin-top: 10px;
 }
@@ -151,8 +151,6 @@ body {
   background-position: center;
   background-size: cover;
   height: 350px;
-  display: flex;
-  justify-content: center;
   /* will not work properly in ie below 10, warning appended */
 }
 
@@ -160,7 +158,8 @@ body {
   text-align: center;
   font-family: sans-serif;
   font-size: 40px;
-  align-self: flex-end;
+  margin: 0px;
+  padding-top: 280px;
 }
 
 .maincontainer {
