@@ -73,7 +73,7 @@ body {
   box-shadow: 0px 0px 8px 5px #000;
   overflow: auto;
   color-scheme: dark;
-  font-family: roboto;
+  font-family: roboto, sans-serif;
   position: fixed;
   /* Radu: fixes the sidebar to the left of the browser window
     independent from scrolling */
@@ -94,7 +94,7 @@ body {
 
 .homepages {
   text-align: center;
-  font-family: Roboto;
+  font-family: roboto, sans-serif;
   font-size: 16px;
   margin-top: 10px;
 }
@@ -173,24 +173,24 @@ body {
 }
 
 .maintext {
-  font-family: roboto;
+  font-family: roboto, Tahoma;
   font-size: 14px;
 }
 
 .maintext-bold {
-  font-family: roboto;
+  font-family: roboto, Tahoma;
   font-size: 14px;
   font-weight: bold;
 }
 
 .maintext-italic {
-  font-family: roboto;
+  font-family: roboto, Tahoma;
   font-size: 14px;
   font-style: italic;
 }
 
 .maintext-title {
-  font-family: roboto;
+  font-family: roboto, Tahoma;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -241,7 +241,7 @@ hr {
 ------------------------------------------------------------
 */
 table {
-  font-family: roboto;
+  font-family: roboto, Tahoma;
   font-size: 13px;
   border-collapse: collapse;
   width: 100%;
