@@ -146,6 +146,7 @@ body {
 }
 
 .bannerimage {
+  background-image: url(../sunset.jpg);
   background-image: linear-gradient(to bottom, transparent 97%, whitesmoke 100%),
     url(../sunset.jpg);
   background-position: 100% 65%;
