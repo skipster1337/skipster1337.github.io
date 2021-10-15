@@ -146,9 +146,9 @@ body {
 }
 
 .bannerimage {
-  background-image: linear-gradient(to bottom, transparent 50%, whitesmoke 100%),
-    url(../server.png);
-  background-position: center;
+  background-image: linear-gradient(to bottom, transparent 97%, whitesmoke 100%),
+    url(../sunset.jpg);
+  background-position: 100% 65%;
   background-size: cover;
   height: 350px;
   /* will not work properly in ie below 10, warning appended */
@@ -197,7 +197,7 @@ body {
 
 .main a {
   text-decoration: none;
-  color: darkslategrey;
+  color: darkred;
 }
 
 .main a:hover {
@@ -206,7 +206,7 @@ body {
 
 .link-italic {
   text-decoration: none;
-  color: darkslategrey;
+  color: darkred;
   font-style: italic;
 }
 
