@@ -257,17 +257,3 @@ th {
 tr:nth-child(even) {
   background-color: lightgray;
 }
-
-/* scrollbars
-------------------------------------------------------------
-*/
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: rgba(155, 155, 155, 0.5);
-  border: transparent;
-}
