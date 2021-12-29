@@ -8,7 +8,6 @@ body {
   /* height: 100%; */
   /* extends the divs down to the bottom of the page */
   margin: 0;
-  scrollbar-width: thin;
 }
 
 /* font faces
@@ -81,8 +80,6 @@ body {
   bottom: 0;
   left: 0;
   width: 200px;
-  scrollbar-width: thin;
-  /* set the width for the sidebar here */
 }
 
 .sidebarlogo {
@@ -221,7 +218,6 @@ hr {
   overflow: auto;
   border-radius: 4px;
   padding: 10px;
-  scrollbar-width: thin;
 }
 
 .codeblock pre {
