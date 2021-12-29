@@ -67,7 +67,8 @@ body {
 */
 
 .sidebar {
-  background-color: #212329;
+  /*background-color: #212329; fuck this color lmao*/
+  background-color: #1C1C1C;
   color: white;
   box-shadow: 0px 0px 8px 5px #000;
   overflow: auto;
