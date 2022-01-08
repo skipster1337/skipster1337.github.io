@@ -100,6 +100,9 @@
         >
       </p>
       <p class="sidebartext">
+        <a href="#vlc-yt">&bull; Playing YouTube videos in VLC</a>
+      </p>
+      <p class="sidebartext">
         <a href="#steam">&bull; Using Steam on Windows XP in 2021</a>
       </p>
       <p class="sidebartext">
@@ -3329,13 +3332,48 @@ https://clients2.google.com/service/update2/crx?response=redirect&prodversion=[P
             <img class="thumbnail" src="https://i.imgur.com/WMBHXY2.png" />
           </a>
         </p>
+        <p class="maintext" id="vlc-yt">
+          <b><i>Playing YouTube videos in VLC</i></b>
+          <br />
+          VLC has built-in compatibility for playing network streams, which also
+          works with YouTube, however usually it takes some work to get it
+          running as the YouTube support that it comes with is often outdated.
+          <br />
+          To get it working, you have to head to VLC's GitHub repository and
+          find the file called
+          <a
+            href="https://github.com/videolan/vlc/blob/master/share/lua/playlist/youtube.lua"
+            >youtube.lua</a
+          >. Once there, click on "Raw" and save the obtained page as
+          "youtube.luac" and put it in "VideoLAN\VLC\lua\playlist" (on Linux you
+          can find the location for VLC by typing "whereis vlc" in the command
+          line.)
+          <br />
+          <br />
+          After that, open VLC (or restart it if it was running), go to "Media >
+          Open network stream" and paste your YouTube link (remember to set the
+          desired video output and quality in the settings to hopefully improve
+          performance). Alternatively you can use
+          <a href="https://invidio.us">invidio.us</a> to bring up a list of
+          invidious instances, search for a video there and replace everything
+          before "watch?v" with "https://www.youtube.com/".
+          <br />
+          You can also use SMTube with VLC by going to its configuration and
+          adding it as a supported player. Then you can right click a video and
+          set it to play in VLC.
+          <br />
+          <a
+            href="https://old.reddit.com/r/windowsxp/comments/pqobxt/watching_youtube_in_vlc_really_improves/"
+            >Proof</a
+          >
+        </p>
         <p class="maintext" id="steam">
           <b><i>Using Steam on Windows XP in 2021</i></b>
           <br />
           <iframe
             class="thumbnail"
-            width="560"
-            height="315"
+            width="500"
+            height="281"
             src="https://www.youtube.com/embed/6-FbdgMar7Q"
             title="YouTube video player"
             frameborder="0"
@@ -3368,8 +3406,7 @@ https://clients2.google.com/service/update2/crx?response=redirect&prodversion=[P
             ></b
           >
           <br />
-          Reddit user u/RevolutionaryArm7530 found a way to get
-          Escargot-patched
+          Reddit user u/RevolutionaryArm7530 found a way to get Escargot-patched
           <a
             href="https://old.reddit.com/r/windowsxp/comments/q1cchv/windows_live_messenger_2009_working_on_xp/"
             >Windows Live Messenger 2009 working on XP</a
