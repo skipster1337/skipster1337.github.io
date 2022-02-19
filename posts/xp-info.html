@@ -31,13 +31,29 @@
           using Windows XP in modern times while ensuring maximum possible
           security and compatibility.
         </p>
-        <i class="maintext-bold" style="color: darkred"
-          >Warning: Windows XP will only work on hardware NOT NEWER THAN third
-          gen Intel processors and GTX 900 series NVIDIA graphics cards. AMD
-          Ryzen processors are NOT SUPPORTED and INCOMPATIBLE without unofficial
-          patches. The hardware compatibility range is around 2000 to 2014. You
-          have been warned.</i
+        <p class="maintext-bold">Compatibility Guide</p>
+        <p class="maintext"
+          >Windows XP will only work on hardware not newer than third gen Intel
+          processors, GTX 900 series NVIDIA graphics cards and their AMD
+          equivalents. AMD Ryzen processors are obviously not supported and
+          incompatible without unofficial patches. The hardware compatibility
+          range is around 2000 to 2014.</i
         >
+        <p class="maintext-bold">Getting drivers</p>
+        <p class="maintext">
+          Now the first thing you should do is obtain XP drivers for your
+          device. Most manufacturers will have drivers on their support pages
+          for the motherboards or laptops that came out in the XP era. You can
+          also try searching up your device on Google and find drivers that way.
+          <a href="https://us.driverscollection.com/">DriversCollection</a> and
+          <a href="http://driverpacks.net/downloads">Driverpacks</a> are good
+          places to search for drivers. You can also try finding the original
+          driver CD for your motherboard, or searching for drivers that come in
+          .cab format from the
+          <a class="link" href="https://www.catalog.update.microsoft.com"
+            >Microsoft Update Catalog</a
+          >.
+        </p>
         <p class="maintext-bold">Preparing the installation media</p>
         <p class="maintext">
           First of all you have to get an ISO file. If you don't already have
@@ -45,6 +61,20 @@
           it, but if you don't, just grab one of the many ISO images on
           <a href="http://archive.org">archive.org</a> and find a key online.
           Can't really get into the details for obvious reasons.
+        </p>
+        <p class="maintext">
+          You should note that if your PC uses a SATA drive, you will need SATA
+          drivers integrated into your installation media to proceed with
+          installing. However a common workaround is enabling IDE legacy mode in
+          the BIOS settings, which will make IDE-only operating systems work
+          with SATA drives. You can later install a SATA controller driver from
+          the installed system.
+          <br />
+          Otherwise, grab
+          <a href="https://mega.nz/folder/Fe5CBSyK#IHl_U3yqJr9gEynn7uIH8Q"
+            >this ISO</a
+          >
+          with AHCI drivers pre-integrated.
         </p>
         <p class="maintext">
           Next, you have to make a USB-based installation medium which will be
@@ -77,36 +107,16 @@
           from your new USB drive. Select the first part of the setup, and then
           the second part of the setup.
         </p>
-        <p class="maintext">
-          You should note that if your PC uses a SATA drive, you will need SATA
-          drivers integrated into your installation media to proceed with
-          installing. However a common workaround is enabling IDE legacy mode in
-          the BIOS settings, which will make IDE-only programs work with SATA
-          drives. You can later install a SATA controller driver from the
-          installed system.
-          <br />
-          Otherwise, grab
-          <a href="https://mega.nz/folder/Fe5CBSyK#IHl_U3yqJr9gEynn7uIH8Q"
-            >this ISO</a
-          >
-          with AHCI drivers pre-integrated.
-        </p>
-        <p class="maintext-bold">Getting drivers</p>
+        <p class="maintext-bold">Installing drivers</p>
         <p class="maintext">
           When it's done installing, you should be greeted by the desktop. At
-          this point you need to install the drivers, and it can be a real issue
-          sometimes. There are several ways to install drivers: finding the
-          original driver CD for your motherboard, using DPinst to install
-          drivers that come in .cab format from the
-          <a class="link" href="https://www.catalog.update.microsoft.com"
-            >Microsoft Update Catalog</a
-          >, searching for drivers on the internet (hint: try
-          <a href="http://driverpacks.net/driverpacks">DriverPacks</a>) or using
-          a driver app like Snappy Driver Installer (you could also use SDI
-          Origin, both are great apps but will take a while to download all of
-          the needed drivers.). It's probably a good idea to drop the full
-          version on a USB drive, but mine is only 8 GB so I ended up using the
-          original driver CD and installing driver updates using DPinst.
+          this point you need to install the drivers that you've hopefully
+          downloaded beforehand. If you didn't find any, you can use a driver
+          app like Snappy Driver Installer (you could also use SDI Origin, both
+          are great apps but will take a while to download all of the needed
+          drivers.). It's probably a good idea to drop the full version on a USB
+          drive, but mine is only 8 GB so I ended up using the original driver
+          CD and installing driver updates using DPinst.
         </p>
         <p class="maintext-bold">Getting Updates and Software</p>
         <p class="maintext">
