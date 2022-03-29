@@ -110,7 +110,7 @@ body {
 
 .sidebartext-bold {
   padding-left: 10px;
-  font-family: sans-serif;
+  font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 0px;
@@ -156,7 +156,7 @@ body {
 
 .homepage-title {
   text-align: center;
-  font-family: sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 40px;
   margin: 0px;
   padding-top: 280px;
@@ -172,24 +172,24 @@ body {
 }
 
 .maintext {
-  font-family: roboto, Tahoma;
+  font-family: roboto, sans-serif;
   font-size: 14px;
 }
 
 .maintext-bold {
-  font-family: roboto, Tahoma;
+  font-family: roboto, sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
 
 .maintext-italic {
-  font-family: roboto, Tahoma;
+  font-family: roboto, sans-serif;
   font-size: 14px;
   font-style: italic;
 }
 
 .maintext-title {
-  font-family: roboto, Tahoma;
+  font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -224,7 +224,7 @@ hr {
 
 .codeblock pre {
   margin: 0px;
-  font-family: Consolas;
+  font-family: Consolas, monospace;
   font-size: 13px;
   /* get rid of empty lines on start and finish */
 }
@@ -239,7 +239,7 @@ hr {
 ------------------------------------------------------------
 */
 table {
-  font-family: roboto, Tahoma;
+  font-family: roboto, sans-serif;
   font-size: 13px;
   border-collapse: collapse;
   width: 100%;
