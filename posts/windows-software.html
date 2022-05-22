@@ -314,6 +314,46 @@
             </td>
           </tr>
           <tr>
+            <td>*</td>
+            <td>Mypal 68</td>
+            <td>68.12.1 - 68.12.3</td>
+            <td>
+              <a
+                href="https://github.com/Feodor2/Mypal68/releases/download/68.12.3b/mypal-68.12.3.en-US.win32.zip"
+                >68.12.3</a
+              >,
+              <a href="https://github.com/Feodor2/Mypal68">GitHub Repository</a>
+              <br />
+              Older versions:
+              <br />
+              <a
+                href="http://web.archive.org/web/20220407150040/https://01.sendcdn.com/d/cjyqhste6gosj4l4yv2fdefx3mppdsxyzphmoleos2d2iodaam37tizlxeicd32tiy4tm6r3/mypal-68.12.1.en-US.win32.patched.zip"
+                >68.12.1 patched for file downloads</a
+              >
+            </td>
+            <td>
+              New version of Mypal based on Firefox Quantum 68esr. So far the
+              best available browser on XP.
+              <br />
+              Latest version of Adguard that works is
+              <a
+                href="https://addons.mozilla.org/firefox/downloads/file/3882329/adguard_adblocker-3.6.17-an+fx.xpi"
+                >3.6.17</a
+              >, and best working uBlock version is
+              <a
+                href="https://github.com/gorhill/uBlock/releases/download/1.16.2/uBlock0.webext.xpi"
+                >1.16.2</a
+              >. Later versions of uBlock have issues on XP, but not Vista+.
+              <br />
+              Mypal 68.12.2b was super buggy from my experience, so I skipped
+              straight from 68.12.1 to 68.12.3.
+              <br />
+              Remember to clear your profile folder before version upgrades
+              (Mypal68 in AppData)! Easiest way to find it is using
+              <a href="#everything">Everything</a>.
+            </td>
+          </tr>
+          <tr>
             <td></td>
             <td>Mypal Legacy</td>
             <td>29.3.0</td>
@@ -333,33 +373,6 @@
             </td>
             <td>Discontinued old version</td>
           </tr>
-          <tr>
-            <td>*</td>
-            <td>Mypal 68</td>
-            <td>68.12.3</td>
-            <td>
-              <a href="https://github.com/Feodor2/Mypal68/releases/download/68.12.3b/mypal-68.12.3.en-US.win32.zip">Download 68.12.3</a>,
-              <a href="https://github.com/Feodor2/Mypal68">GitHub Repository</a>
-              <br>
-              Older versions:
-              <br />
-              <a href="http://web.archive.org/web/20220407150040/https://01.sendcdn.com/d/cjyqhste6gosj4l4yv2fdefx3mppdsxyzphmoleos2d2iodaam37tizlxeicd32tiy4tm6r3/mypal-68.12.1.en-US.win32.patched.zip">68.12.1 patched for file downloads</a>
-            </td>
-            <td>
-              New version of Mypal based on Firefox Quantum 68esr. So far the best available browser on XP. Latest version of Adguard that works is
-              <a
-                href="https://addons.mozilla.org/firefox/downloads/file/3882329/adguard_adblocker-3.6.17-an+fx.xpi"
-                >3.6.17</a
-              >, and best working uBlock version is
-              <a
-                href="https://github.com/gorhill/uBlock/releases/download/1.16.2/uBlock0.webext.xpi"
-                >1.16.2</a
-              >. Later versions of uBlock have issues on XP, but not Vista+.
-              <br />
-              Mypal 68.12.2b was super buggy from my experience, so I skipped straight from 68.12.1 to 68.12.3.
-              <br />
-              Reemember to clean your profile folder before upgrading! (Mypal68 in AppData)
-            </td>
           <tr>
             <td>*</td>
             <td>New Moon</td>
@@ -1717,7 +1730,7 @@
               .docx
             </td>
           </tr>
-          <tr>
+          <tr id="everything">
             <td>*</td>
             <td>Everything</td>
             <td>1.4.1.1009</td>
@@ -2273,6 +2286,23 @@
               <a
                 href="http://web.archive.org/web/20220108025124/https://cloud10.send.cm/d/afywmrs36gosj4l4ir2f3hhbygryr4gkhuftktrmj5dhb3hjjwykom7nnz3xmrovvmp6ro4c/100%20Sidebar%20Gadgets.rar"
                 >100 Sidebar Gadgets</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>xpize</td>
+            <td>5R6</td>
+            <td>
+              <a href="https://www.majorgeeks.com/files/details/xpize.html"
+                >Download</a
+              >
+            </td>
+            <td>
+              GUI enhancer for XP. Replaces icons, bitmaps, login UI, themes and
+              wallpapers with fresher XP-ified versions.
+              <a href="http://forum.eclectic4un.me/viewtopic.php?p=345#p345"
+                >Screenshot</a
               >
             </td>
           </tr>
@@ -3861,11 +3891,13 @@ https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/fil
             >Reddit thread</a
           >
           <br />
-          <img
-            class="thumbnail"
-            src="img/wf-scrollfix.png"
-            alt="ui.window_class_override preference"
-          />
+          <a href="img/wf-scrollfix.png">
+            <img
+              class="thumbnail"
+              src="img/wf-scrollfix.png"
+              alt="ui.window_class_override preference"
+            />
+          </a>
         </p>
         <p class="maintext" id="chrome-extensions">
           <b
@@ -3942,8 +3974,9 @@ https://clients2.google.com/service/update2/crx?response=redirect&prodversion=[P
           <br />
           <i
             >Warning: using anything other than the official Discord client is
-            against the TOS. They won't outright ban you for it in most cases,
-            but still, be warned.</i
+            against the TOS. Using this plugin is highly unrecommended as I got
+            tempbanned multiple times while using it. Only keeping this here for
+            informational purposes.</i
           >
           <br />
           <br />
@@ -4003,6 +4036,9 @@ https://clients2.google.com/service/update2/crx?response=redirect&prodversion=[P
         </p>
         <p class="maintext" id="steam">
           <b><i>Using Steam on Windows XP in 2021</i></b>
+          <br />
+          <b>BROKEN!</b> No longer downloads games. Steam on XP is basically
+          dead now.
           <br />
           <iframe
             class="thumbnail"
