@@ -7,7 +7,7 @@
       body {
         background-color: black;
         color: white;
-        font-family: "Terminus (TTF)";
+        font-family: "Terminus (TTF)", "Consolas", "Menlo", "monospace";
         font-size: 9pt;
       }
       .lambda {
@@ -18,7 +18,7 @@
       }
       .blink {
         animation: blinker 1s step-start infinite;
-		font-size: 12pt;
+        font-size: 12pt;
       }
 
       @keyframes blinker {
@@ -36,16 +36,16 @@
       a:hover {
         text-decoration: underline;
       }
-	  input {
-		background-color: black;
-		border: none;
-		color: white;
-		font-family: "Terminus (TTF)";
-		font-size: 9pt;
-		outline: none;
-		margin: 0;
-		padding: 0;
-	  }
+      input {
+        background-color: black;
+        border: none;
+        color: white;
+        font-family: terminus2;
+        font-size: 9pt;
+        outline: none;
+        margin: 0;
+        padding: 0;
+      }
     </style>
   </head>
   <body>
@@ -58,8 +58,15 @@
       <a href="https://www.reddit.com">reddit</a>
     </div>
     <span class="skip">skip </span>in <span class="lambda">~ λ</span> search
-    <form name="q" action="https://www.google.com/search" method="get" id="q" autocomplete="off">
-      Enter your query: <input
+    <form
+      name="q"
+      action="https://www.google.com/search"
+      method="get"
+      id="q"
+      autocomplete="off"
+    >
+      Enter your query:
+      <input
         class="search-form"
         autofocus="autofocus"
         type="text"
