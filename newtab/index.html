@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>newtab</title>
+    <style>
+      html,
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Terminus (TTF)";
+        font-size: 9pt;
+      }
+      .lambda {
+        color: #686868;
+      }
+      .skip {
+        color: #afafaf;
+      }
+      .blink {
+        animation: blinker 1s step-start infinite;
+		font-size: 12pt;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+      .category {
+        color: #afafaf;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+	  input {
+		background-color: black;
+		border: none;
+		color: white;
+		font-family: "Terminus (TTF)";
+		font-size: 9pt;
+		outline: none;
+		margin: 0;
+		padding: 0;
+	  }
+    </style>
+  </head>
+  <body>
+    <span class="skip">skip </span>in <span class="lambda">~ λ</span> ls
+    <div class="linkbox">
+      <span class="category">general</span>
+      <br />
+      <a href="https://www.youtube.com">youtube</a>
+      <br />
+      <a href="https://www.reddit.com">reddit</a>
+    </div>
+    <span class="skip">skip </span>in <span class="lambda">~ λ</span> search
+    <form name="q" action="https://www.google.com/search" method="get" id="q" autocomplete="off">
+      Enter your query: <input
+        class="search-form"
+        autofocus="autofocus"
+        type="text"
+        name="q"
+        size="60"
+        maxlength="255"
+        value
+      />
+    </form>
+    <!-- <span class="blink">|</span> -->
+  </body>
+</html>
