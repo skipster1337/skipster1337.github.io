@@ -1,0 +1,244 @@
+/**
+ * @name NoNitroThanks
+ * @description Everyone hates ads right? So... why is discord going to be an exception with nitro?
+ * @author ImSwordKing
+ * @version 1.0.2
+ */
+
+/* Disable all the data tracking options in "Privacy & Safety" before using the theme. */
+
+/* most of the theme was made by Nyria#3863. */
+
+/* nitro tab */
+.scroller-1bVxF5 .colorPremium-vwmYZQ,
+
+/* flower icon next to server name */
+.flowerStar-2tNFCR,
+.flowerStarContainer-1QeD-L,
+
+/* question mark when trying to change tag in user settings */
+.questionMark-3V9mGJ,
+
+/* remove nitro label in user customization section */
+.customizationSection-IGy2fS:nth-child(3),
+
+/* remove stuff in server settings related to nitro */
+.emptyState-Ud44C9 .colorHeaderSecondary-g5teka, 
+.emptyState-Ud44C9 .stickersRow-3OJE_7,
+.container-1eD8xH,
+.emptyState-Ud44C9 .colorHeaderSecondary-g5teka, 
+.emptyState-Ud44C9 .stickersRow-3OJE_7,
+.shinyButton-2Q9MDB, 
+.premiumPromoDescription-1kf0Oa,
+.divider--oiTeJ+div+div+div,
+.children-1xdcWE .upsellContainer-22N_CL,
+.emptyTierWrapper-V5c-R7 .button-f2h6uQ,
+
+/* removes server banners */
+.animatedContainer-2laTjx, 
+.content-2a4AW9 [style="height: 84px;"], 
+.bannerImage-ubW8K-, 
+.animatedBannerHoverLayer-129r1v,
+
+/* removes gift button */
+.buttons-uaqb-5 > .button-f2h6uQ:not(.BD-TeX-plugin-button) > :not(.quickToggleButton-P2xDh8)
+{
+    display: none;
+}
+
+/* Removes nitro promotion when you press on disabled emojis */
+.premiumPromo-1eKAIB .premiumPromoTitle-3tWrPT{
+    font-size: 0;
+}
+.premiumPromo-1eKAIB .premiumPromoTitle-3tWrPT:before{
+    content:"Hello, This isn't available for free. sorry :(";
+    font-size: 20px;
+    text-align: center;
+    display:block;
+}
+
+
+/* Removes nitro promotion on custom stickers */
+.emptyState-Ud44C9 .header-24Iqpn{
+    font-size: 0px;
+}
+.emptyState-Ud44C9 .header-24Iqpn:before{
+    content:'Hello, You need to pay ( :( ) to use custom stickers.';
+    font-size: 24px;
+}
+
+/* Hide nitro icon on banners */
+.bannerPremium-2hSAwz .premiumIconWrapper-1A-UH5 {
+  display: none;
+}
+
+.privateChannels-oVe7HL [href="/store"] + svg,
+.item-3XjbnG [class*="Promo"],
+.premiumLabel-3HPvdB svg,
+.premiumLabel-3HPvdB .badgeIconSettingsMenu-39c26C {
+    display: none;
+}
+
+.premiumLabel-3HPvdB {
+    color: var(--color-muted);
+}
+
+/* remove the nitro button from guild list */
+.fixedBottomList-1yrBla > .listItem-3SmSlK {
+    display: none;
+}
+
+/* removes the trial for discord nitro */
+
+.premiumTrialBadge-pEqntF {
+    display: none;
+}
+
+/* removes the promo stuff for discord nitro */
+
+.privateChannels-oVe7HL [href="/store"] + svg,
+.item-3XjbnG [class*="Promo"],
+.premiumLabel-3HPvdB svg,
+.premiumLabel-3HPvdB .badgeIconSettingsMenu-39c26C {
+    display: none;
+}
+
+.premiumLabel-3HPvdB {
+    color: var(--color-muted);
+}
+
+/* remove misc nitro advertisements from the UI */
+
+#account-style-your-profile,
+.container-2giAcK,
+.paymentModalContent,
+.premiumIcon-3ZB6PS,
+.premiumIconWrapper-32h0Ri,
+.upsellOverlay-3sCO8V,
+.upsellOverlayContainer-3NMgTS,
+.gifIconContainer-3os21a,
+.gif-38WdXH,
+.bannerNitroUpsell-2iP18z {
+    display: none;
+}
+
+/* remove nitro settings */
+
+.header-2Kx1US:nth-of-type(9),
+.background-Gjdjzm,
+.themed-2.premiumTab-39eQzY,
+.themed-2-lozF.item-3XjbnG.premiumTab-39eQzY,
+.card-16VQ8C.codeRedemptionRedirect-2hYMSQ,
+.themed-2-lozF.item-3XjbnG:nth-of-type(11),
+.themed-2-lozF.item-3XjbnG:nth-of-type(13),
+.themed-2-lozF.item-3XjbnG:nth-of-type(12) {
+    display: none;
+}
+
+.header-2Kx1US:nth-of-type(10),
+.themed-2-lozF.item-3XjbnG:nth-of-type(14),
+.separator-2wx7h6:nth-of-type(9) {
+    display: none;
+}
+
+/* (Experimental Features) Changes */
+
+/* Profile Skin advertisement */
+.profileThemeSectionPremiumBorder-pH_ioT.customizationSection-IGy2fS {display: none}
+
+/* Animated Banner advertisement */
+.upsellVisible-2_CoRC,
+.upsellHidden-2_CoRC,
+.upsell-27kXsw {
+    display: none;
+}
+
+/* Nitro popup in banners */
+.premiumIconWrapper-yyGDql,
+.premiumIcon-3WfDzD {
+    display: none;
+}
+
+/* Revert the profile skin change (Profile skin experiment needed) by Disease#3749*/
+.text-md-medium-2avxhQ.defaultColor-24IHKz {
+    display: none;
+}
+
+.theme-dark.profileColors-3Y0XaR,
+.theme-light.profileColors-3Y0XaR {
+    --profile-body-background-color: var(--background-floating);
+    --profile-body-divider-color: var(--background-modifier-accent);
+    --profile-body-divider-opacity: 1;
+    --profile-avatar-border-color: var(--background-floating);
+}
+
+.userPopout-3fydSP .userPopoutInner-PA9zkU:before {
+    display: none;
+}
+
+.userPopout-3fydSP .userPopoutInnerNonPremium-3zrFkp,
+.userPopout-3fydSP .userPopoutInnerWithBanner-wsoegj {
+    background: none;
+}
+
+.userPopout-3fydSP {
+    width: 300px;
+    background: var(--background-floating);
+}
+
+.userPopout-3fydSP .overlayBackground-arbZMT {
+    margin: 16px 0 0 0;
+    background: none;
+    max-height: unset;
+}
+
+.userPopout-3fydSP .section-3FmfOT {
+    padding-left: 16px;
+    padding-right: 8px;
+}
+
+.userPopout-3fydSP .eyebrow-Ejf06y.defaultColor-HXu-5n,
+.theme-dark .userPopout-3fydSP .activityUserPopoutV2-3eKqzY .headerText-3g1XK9,
+.theme-light .userPopout-3fydSP .activityUserPopoutV2-3eKqzY .headerText-3g1XK9 {
+    color: var(--header-secondary);
+}
+
+.userPopout-3fydSP .lookFilled-yCfaCM.colorPrimary-2AuQVo {
+    background: var(--background-secondary-alt);
+}
+
+.userPopout-3fydSP .passport-s0EX8a,
+.userPopout-3fydSP .rolePill-2Lo5dd {
+    background: var(--background-secondary-alt);
+}
+
+.userPopout-3fydSP .messageInputContainer-2rGDH8 {
+    border: none;
+    background-color: var(--background-secondary-alt);
+}
+
+
+/* Remove the comment to enable experimental features */
+
+/* New Grayed out emoji tab list (Experiments) */
+
+/*
+
+.video-2LsgIj, 
+.modalHeaderArtwork-wWqt4O {
+    display: none;
+}
+
+.contentCardDescription-2kua_z {
+font-size: 0px;
+}
+.contentCardDescription-2kua_z:before {
+    content:"This feature isn't available for free users. Sorry";
+    font-size: 20px;
+    text-align: center;
+    display:block;
+}
+
+*/
+
+/* ---> fuck you discord <--- */
