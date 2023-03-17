@@ -215,6 +215,15 @@ hr {
   border-top: 1px solid dimgray;
 }
 
+.code {
+  font-family: Consolas, monospace;
+/*
+  background-color: lightgray;
+  border-radius: 4px;
+  border: 1px solid dimgray;
+*/
+}
+
 .codeblock {
   background-color: lightgray;
   overflow: auto;
